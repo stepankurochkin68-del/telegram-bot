@@ -20,7 +20,9 @@ from telegram.ext import (
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = "8667225917:AAFHpUFaQmIRCwc9MTg6zPGSmcvXpEA0KKc"
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = 5068182519
 CHANNEL_LINK = "https://t.me/+iU0AU04JtTdmMWEy"
 
